@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Basics</title>
+    <style>
+        ul.nav {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    ul.nav li {
+      float: left;
+    }
+
+    ul.nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    ul.nav li a:hover {
+      background-color: #555;
+    }
+
+    /* Highlight current page */
+    ul.nav li a.active {
+      background-color: #04AA6D; /* green highlight */
+      font-weight: bold;
+    }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .code {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 6px;
+            font-family: Consolas, monospace;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+    <li><a href="java.html">Java Basics</a></li>
+    <li><a href="python.html" class="active">Python Basics</a></li>
+    <li><a href="oops.html">OOP Concepts</a></li>
+    <li><a href="sql.html">SQL Practice</a></li>
+  </ul>
+    <h1>Python Basics</h1>
+    <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It is widely used in web development, data science, artificial intelligence, automation, and more.</p>
+
+    <h2>1. Print Statement</h2>
+    <p>The <code>print()</code> function is used to display output:</p>
+    <div class="code">
+print("Hello, Python!")
+    </div>
+
+    <h2>2. Variables</h2>
+    <p>Variables are used to store data:</p>
+    <div class="code">
+x = 10
+name = "Manish"
+print(x, name)
+    </div>
+
+    <h2>3. Data Types</h2>
+    <p>Common Python data types include:</p>
+    <ul>
+        <li><b>int</b> → Numbers (10, 20, -5)</li>
+        <li><b>float</b> → Decimal values (3.14, 9.8)</li>
+        <li><b>str</b> → Strings ("Hello")</li>
+        <li><b>list</b> → Ordered collection ([1, 2, 3])</li>
+        <li><b>dict</b> → Key-value pairs ({'name': 'Manish', 'age': 22})</li>
+    </ul>
+
+    <h2>4. Conditional Statements</h2>
+    <p>Use <code>if-elif-else</code> for decision making:</p>
+    <div class="code">
+age = 18
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")
+    </div>
+
+    <h2>5. Loops</h2>
+    <p>Loops are used to repeat tasks:</p>
+    <div class="code">
+for i in range(5):
+    print(i)
+
+while i > 0:
+    print(i)
+    i -= 1
+    </div>
+
+    <h2>6. Functions</h2>
+    <p>Functions allow reusability of code:</p>
+    <div class="code">
+def greet(name):
+    return "Hello, " + name
+
+print(greet("Manish"))
+    </div>
+
+    <h2>Summary</h2>
+    <p>Python’s simple syntax makes it beginner-friendly yet powerful enough for complex applications. Mastering variables, data types, conditions, loops, and functions is the foundation of Python programming.</p>
+</body>
+</html>
