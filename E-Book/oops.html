@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OOP Concepts</title>
+    <style>
+      ul.nav {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    ul.nav li {
+      float: left;
+    }
+
+    ul.nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    ul.nav li a:hover {
+      background-color: #555;
+    }
+
+    /* Highlight current page */
+    ul.nav li a.active {
+      background-color: #04AA6D; /* green highlight */
+      font-weight: bold;
+    }
+
+        body { font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; margin: 0; padding: 20px; }
+        h1 { color: #2c3e50; text-align: center; }
+        h2 { color: #34495e; margin-top: 20px; }
+        p { margin-bottom: 15px; }
+        .code {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 6px;
+            font-family: Consolas, monospace;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+  <ul class="nav">
+    <li><a href="java.html" >Java Basics</a></li>
+    <li><a href="python.html" >Python Basics</a></li>
+    <li><a href="oops.html" class="active">OOP Concepts</a></li>
+    <li><a href="sql.html">SQL Practice</a></li>
+  </ul>
+    <h1>OOP Concepts</h1>
+    <p>Object-Oriented Programming (OOP) organizes code into classes and objects, making it modular, reusable, and easy to maintain. The four pillars of OOP are:</p>
+
+    <h2>1. Encapsulation</h2>
+    <p>Wrapping data (fields) and behavior (methods) together in a single unit (class).</p>
+    <div class="code">
+class Student {
+    private String name;
+    public void setName(String n) { name = n; }
+    public String getName() { return name; }
+}
+    </div>
+
+    <h2>2. Inheritance</h2>
+    <p>One class can inherit fields and methods from another.</p>
+    <div class="code">
+class Animal {
+    void sound() { System.out.println("Animal makes a sound"); }
+}
+
+class Dog extends Animal {
+    void sound() { System.out.println("Dog barks"); }
+}
+    </div>
+
+    <h2>3. Polymorphism</h2>
+    <p>Same method name but different behavior depending on context.</p>
+    <div class="code">
+Animal a = new Dog();  
+a.sound();   // Output: Dog barks
+    </div>
+
+    <h2>4. Abstraction</h2>
+    <p>Hiding implementation details and showing only essential features.</p>
+    <div class="code">
+abstract class Shape {
+    abstract void draw();
+}
+
+class Circle extends Shape {
+    void draw() { System.out.println("Drawing Circle"); }
+}
+    </div>
+
+    <h2>Summary</h2>
+    <p>OOP principles—Encapsulation, Inheritance, Polymorphism, and Abstraction—form the foundation of modern programming in Java, Python, C++, and many other languages.</p>
+</body>
+</html>
