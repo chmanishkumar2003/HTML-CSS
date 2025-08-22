@@ -1,0 +1,64 @@
+Got it 👍
+Here’s a simple **README.md** file for your project that explains the HTML e-book pages (Java, Python, OOP, SQL) and also clarifies **SSC & HSC certificates**:
+
+---
+
+# 📘 E-Book Project
+
+This project is a simple **HTML-based e-book website** that contains study material on **Java, Python, OOP, and SQL**.
+Each topic is structured into separate HTML files and linked through a common navigation menu.
+
+---
+
+## 📂 Project Structure
+
+```Ebook/
+│── E-Booh.html        # Homepage
+│── java.html         # Java Basics
+│── python.html       # Python Basics
+│── oops.html         # OOP Concepts
+│── sql.html          # SQL Practice
+```
+
+---
+
+## 🌐 Features
+
+* 📑 **Navigation Menu** on every page.
+* 🔗 Links to **Java, Python, OOP, and SQL** pages.
+* 🎨 Highlighting of the **current page** in the navigation bar.
+* 📘 Simple content for learning basics.
+
+---
+
+## 📖 Educational Notes
+
+### 🔹 SSC Certificate
+
+* **Full Form**: Secondary School Certificate
+* Awarded after **10th Class Board Exams**.
+* Contains: student details, subjects, marks, date of birth, year of passing, etc.
+
+### 🔹 HSC Certificate
+
+* **Full Form**: Higher Secondary Certificate
+* Awarded after **12th Class Board Exams**.
+* Contains: student details, subjects/stream (Science/Commerce/Arts), marks, year of passing, etc.
+
+---
+
+## 🚀 Usage
+
+1. Open `index.html` in your browser.
+2. Navigate through the sidebar or top menu to open **Java, Python, OOP, or SQL** content.
+3. Each page shows consistent navigation with the **current page highlighted**.
+
+---
+
+## 👨‍💻 Author
+
+* **Manish Kumar**
+* E-Book created for practicing **HTML, CSS, and basic web design** concepts.
+
+---
+
