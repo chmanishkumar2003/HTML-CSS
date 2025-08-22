@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Basics</title>
+    <style>
+      ul.nav {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    ul.nav li {
+      float: left;
+    }
+
+    ul.nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    ul.nav li a:hover {
+      background-color: #555;
+    }
+
+    /* Highlight current page */
+    ul.nav li a.active {
+      background-color: #04AA6D; /* green highlight */
+      font-weight: bold;
+    }      
+        body { font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; margin: 0; padding: 20px; }
+        h1 { color: #2c3e50; text-align: center; }
+        h2 { color: #34495e; margin-top: 20px; }
+        p { margin-bottom: 15px; }
+        .code {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 6px;
+            font-family: Consolas, monospace;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <ul class="nav">
+    <li><a href="java.html" class="active">Java Basics</a></li>
+    <li><a href="python.html" >Python Basics</a></li>
+    <li><a href="oops.html">OOP Concepts</a></li>
+    <li><a href="sql.html">SQL Practice</a></li>
+  </ul>
+    <h1>Java Basics</h1>
+    <p>Java is a popular, class-based, object-oriented programming language designed to be platform-independent through the Java Virtual Machine (JVM).</p>
+
+    <h2>1. Hello World Program</h2>
+    <div class="code">
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, Java!");
+    }
+}
+    </div>
+
+    <h2>2. Variables</h2>
+    <div class="code">
+int age = 22;
+String name = "Manish";
+System.out.println(name + " is " + age + " years old.");
+    </div>
+
+    <h2>3. Data Types</h2>
+    <ul>
+        <li><b>int</b> → 10, 20</li>
+        <li><b>double</b> → 3.14, 9.8</li>
+        <li><b>String</b> → "Hello"</li>
+        <li><b>boolean</b> → true/false</li>
+    </ul>
+
+    <h2>4. Conditional Statements</h2>
+    <div class="code">
+int age = 18;
+if (age >= 18) {
+    System.out.println("You are an adult");
+} else {
+    System.out.println("You are a minor");
+}
+    </div>
+
+    <h2>5. Loops</h2>
+    <div class="code">
+// For loop
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+
+// While loop
+int i = 5;
+while (i > 0) {
+    System.out.println(i);
+    i--;
+}
+    </div>
+
+    <h2>6. Functions (Methods)</h2>
+    <div class="code">
+public static String greet(String name) {
+    return "Hello, " + name;
+}
+
+public static void main(String[] args) {
+    System.out.println(greet("Manish"));
+}
+    </div>
+
+    <h2>Summary</h2>
+    <p>Java is widely used for enterprise applications, Android development, and backend systems. Learning variables, data types, conditions, loops, and methods is essential for mastering Java basics.</p>
+</body>
+</html>
