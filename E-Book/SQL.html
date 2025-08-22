@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SQL Basics</title>
+    <style>
+      ul.nav {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    ul.nav li {
+      float: left;
+    }
+
+    ul.nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    ul.nav li a:hover {
+      background-color: #555;
+    }
+
+    /* Highlight current page */
+    ul.nav li a.active {
+      background-color: #04AA6D; /* green highlight */
+      font-weight: bold;
+    }
+
+        body { font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; margin: 0; padding: 20px; }
+        h1 { color: #2c3e50; text-align: center; }
+        h2 { color: #34495e; margin-top: 20px; }
+        p { margin-bottom: 15px; }
+        .code {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 6px;
+            font-family: Consolas, monospace;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+  <ul class="nav">
+    <li><a href="java.html">Java Basics</a></li>
+    <li><a href="python.html" >Python Basics</a></li>
+    <li><a href="oops.html">OOP Concepts</a></li>
+    <li><a href="sql.html" class="active">SQL Practice</a></li>
+  </ul>
+    <h1>SQL Basics</h1>
+    <p>SQL (Structured Query Language) is used to communicate with relational databases. It allows creating tables, inserting data, and performing queries to retrieve and manipulate information.</p>
+
+    <h2>1. Creating a Table</h2>
+    <div class="code">
+CREATE TABLE Students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT,
+    course VARCHAR(50)
+);
+    </div>
+
+    <h2>2. Inserting Data</h2>
+    <div class="code">
+INSERT INTO Students (id, name, age, course) 
+VALUES (1, 'Manish', 22, 'Computer Science');
+    </div>
+
+    <h2>3. Selecting Data</h2>
+    <p>The <code>SELECT</code> statement is used to retrieve data from a table:</p>
+    <div class="code">
+SELECT * FROM Students;
+SELECT name, course FROM Students WHERE age > 20;
+    </div>
+
+    <h2>4. Updating Data</h2>
+    <div class="code">
+UPDATE Students 
+SET course = 'Data Science' 
+WHERE id = 1;
+    </div>
+
+    <h2>5. Deleting Data</h2>
+    <div class="code">
+DELETE FROM Students WHERE id = 1;
+    </div>
+
+    <h2>6. Joins</h2>
+    <p>Joins combine rows from two or more tables based on related columns.</p>
+    <div class="code">
+SELECT Orders.id, Customers.name
+FROM Orders
+INNER JOIN Customers ON Orders.customer_id = Customers.id;
+    </div>
+
+    <h2>Summary</h2>
+    <p>SQL provides powerful commands like <b>CREATE</b>, <b>INSERT</b>, <b>SELECT</b>, <b>UPDATE</b>, <b>DELETE</b>, and <b>JOIN</b> to work with relational databases effectively. Mastery of SQL is essential for backend developers, data analysts, and database administrators.</p>
+</body>
+</html>
